@@ -29,6 +29,8 @@ enum class SearchField {
     Artist,
     Album,
     Title,
+    Publisher,
+    CatalogNum,
     count
 };
 
