@@ -43,6 +43,8 @@ void SearchModel::create_database (Playlist playlist)
         fields[SearchField::Artist] = tuple.get_str (Tuple::Artist);
         fields[SearchField::Album] = tuple.get_str (Tuple::Album);
         fields[SearchField::Title] = tuple.get_str (Tuple::Title);
+        fields[SearchField::Publisher] = tuple.get_str (Tuple::Publisher);
+        fields[SearchField::CatalogNum] = tuple.get_str (Tuple::CatalogNum);
 
         Item * parent = nullptr;
         SimpleHash<Key, Item> * hash = & m_database;
